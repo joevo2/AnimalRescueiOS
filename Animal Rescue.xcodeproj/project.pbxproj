@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D5798B119E57296008F426C /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5798B019E57296008F426C /* TaskManager.swift */; };
 		5D9141F619E4EDE400A0AB5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9141F519E4EDE400A0AB5C /* AppDelegate.swift */; };
 		5D9141F819E4EDE400A0AB5C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9141F719E4EDE400A0AB5C /* FirstViewController.swift */; };
 		5D9141FA19E4EDE400A0AB5C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9141F919E4EDE400A0AB5C /* SecondViewController.swift */; };
@@ -14,6 +15,7 @@
 		5D9141FF19E4EDE400A0AB5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9141FE19E4EDE400A0AB5C /* Images.xcassets */; };
 		5D91420219E4EDE400A0AB5C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D91420019E4EDE400A0AB5C /* LaunchScreen.xib */; };
 		5D91420E19E4EDE400A0AB5C /* Animal_RescueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D91420D19E4EDE400A0AB5C /* Animal_RescueTests.swift */; };
+		5D91421A19E5055300A0AB5C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D91421919E5055300A0AB5C /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D9141F019E4EDE400A0AB5C /* Animal Rescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animal Rescue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5798AD19E56686008F426C /* Animal RescueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Animal RescueTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D5798B019E57296008F426C /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskManager.swift; path = ../TaskManager.swift; sourceTree = "<group>"; };
 		5D9141F419E4EDE400A0AB5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D9141F519E4EDE400A0AB5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D9141F719E4EDE400A0AB5C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -35,9 +38,11 @@
 		5D9141FC19E4EDE400A0AB5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D9141FE19E4EDE400A0AB5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5D91420119E4EDE400A0AB5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		5D91420719E4EDE400A0AB5C /* Animal RescueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Animal RescueTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D91420C19E4EDE400A0AB5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D91420D19E4EDE400A0AB5C /* Animal_RescueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal_RescueTests.swift; sourceTree = "<group>"; };
+		5D91421919E5055300A0AB5C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		5D91421D19E5458800A0AB5C /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridge-Header.h"; path = "../Bridge-Header.h"; sourceTree = "<group>"; };
+		5D91421E19E5463900A0AB5C /* Animal Rescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animal Rescue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D91421A19E5055300A0AB5C /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,24 +67,19 @@
 		5D9141E719E4EDE400A0AB5C = {
 			isa = PBXGroup;
 			children = (
+				5D91421C19E5058200A0AB5C /* Framework */,
 				5D9141F219E4EDE400A0AB5C /* Animal Rescue */,
 				5D91420A19E4EDE400A0AB5C /* Animal RescueTests */,
-				5D9141F119E4EDE400A0AB5C /* Products */,
+				5D91421E19E5463900A0AB5C /* Animal Rescue.app */,
+				5D5798AD19E56686008F426C /* Animal RescueTests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		5D9141F119E4EDE400A0AB5C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5D9141F019E4EDE400A0AB5C /* Animal Rescue.app */,
-				5D91420719E4EDE400A0AB5C /* Animal RescueTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5D9141F219E4EDE400A0AB5C /* Animal Rescue */ = {
 			isa = PBXGroup;
 			children = (
+				5D91421D19E5458800A0AB5C /* Bridge-Header.h */,
+				5D5798B019E57296008F426C /* TaskManager.swift */,
 				5D9141F519E4EDE400A0AB5C /* AppDelegate.swift */,
 				5D9141F719E4EDE400A0AB5C /* FirstViewController.swift */,
 				5D9141F919E4EDE400A0AB5C /* SecondViewController.swift */,
@@ -115,6 +116,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5D91421C19E5058200A0AB5C /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				5D91421919E5055300A0AB5C /* FacebookSDK.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,7 +141,7 @@
 			);
 			name = "Animal Rescue";
 			productName = "Animal Rescue";
-			productReference = 5D9141F019E4EDE400A0AB5C /* Animal Rescue.app */;
+			productReference = 5D91421E19E5463900A0AB5C /* Animal Rescue.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5D91420619E4EDE400A0AB5C /* Animal RescueTests */ = {
@@ -150,7 +159,7 @@
 			);
 			name = "Animal RescueTests";
 			productName = "Animal RescueTests";
-			productReference = 5D91420719E4EDE400A0AB5C /* Animal RescueTests.xctest */;
+			productReference = 5D5798AD19E56686008F426C /* Animal RescueTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -180,7 +189,7 @@
 				Base,
 			);
 			mainGroup = 5D9141E719E4EDE400A0AB5C;
-			productRefGroup = 5D9141F119E4EDE400A0AB5C /* Products */;
+			productRefGroup = 5D9141E719E4EDE400A0AB5C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -217,6 +226,7 @@
 			files = (
 				5D9141FA19E4EDE400A0AB5C /* SecondViewController.swift in Sources */,
 				5D9141F619E4EDE400A0AB5C /* AppDelegate.swift in Sources */,
+				5D5798B119E57296008F426C /* TaskManager.swift in Sources */,
 				5D9141F819E4EDE400A0AB5C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,9 +352,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Joel/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = "Animal Rescue/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridge-header.h";
 			};
 			name = Debug;
 		};
@@ -352,9 +367,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Joel/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = "Animal Rescue/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridge-header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +431,7 @@
 				5D91421319E4EDE400A0AB5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D91421419E4EDE400A0AB5C /* Build configuration list for PBXNativeTarget "Animal RescueTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +440,7 @@
 				5D91421619E4EDE400A0AB5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
